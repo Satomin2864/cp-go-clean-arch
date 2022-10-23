@@ -10,9 +10,9 @@ type Article struct {
 	ID        int64     `json:"id"`
 	Title     string    `json:"title" validate:"required"`
 	Content   string    `json:"content" validate:"required"`
-	Author    Author    `json:author"`
-	UpdataAt  time.Time `json:"update_at"`
-	CreatedAt time.Time `json:"update_at"`
+	Author    Author    `json:"author"`
+	UpdateAt  time.Time `json:"update_at"`
+	CreatedAt time.Time `json:"created_at"`
 }
 
 type ArticleUsecase interface {
